@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="jp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GitHub Pagesについて</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+
+
+<body>
+    <!--ホームに帰るためのボタン-->
+    <logotohome>
+    <a href="index.html"><img src="images/logo.png" alt=""></a>
+    </logotohome>
+
+    <!--h1は見出し１（大見出し）-->
+    <h1>GitHubPagesの使い方</h1>
+        <!--h2は見出し2（中見出し）-->
+        <h2>■前準備</h2>
+            <!--h3は見出し3（小見出し）-->
+            <h3>GitHubのアカウント</h3>
+            <!--pは段落-->
+            <p>
+                <!--a href はリンク-->
+                <a href="https://github.com/">GitHubのページ</a>でGitHubのアカウントを作りましょう。
+                <br><!--brは改行-->
+                <img src="images/20190611/GitHub_Logo.png" width="30%">
+            </p>
+            <h3>Homebrewをインストール</h3>
+            <!--pは段落-->
+            <p>
+                <img src="images/20190611/homebrew.png" width="30%">
+                <br>
+                ターミナルに下記のコマンドをコピペし、Enterを押すとHomebrewがインストールできます。<br><!--brは改行-->
+                しばらく時間がかかるので、待ちましょう。<br><br>
+                <!--部分的に黒バックにする。cssにプロパティは記述-->
+                <span class="blackback">
+                    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+                </span>
+                
+            </p>
+
+            <h3>gitをインストール</h3>
+                <p>
+                    ターミナルで下記のコマンドを入力しEnterを押し、gitをインストールします。<br>
+                    <span class="blackback">
+                        brew install git
+                    </span>
+                </p>
+            <h3>フォルダの作成</h3>
+                    <p>
+                    フォルダはなんでもいいのですが、わかりやすいようにホームディレクトリにmygitというフォルダを作りましょう。ターミナルを立ち上げて下記のコマンドを入力するとフォルダが作成されます。<br>
+                    <span class="blackback">
+                        mkdir mygit
+                    </span>
+                </p>
+
+        <h2>■GitHubの設定</h2>
+            <h3>リポジトリーの作成</h3>
+            <p>
+                githubの右上にある+マークをクリックし、New Repositoryをクリックし、新しいリポジトリーを作ります。<br>
+                <img src="images/20190611/createrepo.png" width="30%">
+            </p>
+            <p>
+                下記の画像を参考にdoyolabというリポジトリーを作成します。<br>
+                <img src="images/20190611/step1.png" width="80%">
+            </p>
+            <p>
+                リポジトリーのSettingsから下記の設定をします。<br>
+                <img src="images/20190611/step1-1.png" width="80%">
+            </p>
+
+        <h2>■リポジトリーのクローン</h2>
+            <h3>gitのURLをコピー</h3>
+            <p>
+                githubのdoyolabというリポジトリーの中で下記のボタンを押し、リポジトリーのURLをコピーします。
+                <img src="images/20190611/step2.png" width="80%">
+            </p>
+            <h3>mygitに移動</h3>
+            <p>
+                ターミナルを開いて、下記のコマンドでmygitフォルダに移動します。cdはchange directoryの略です<br>
+                <span class="blackback">
+                    cd mygit
+                </span>
+            </p>
+            <h3>自分のPCにリポジトリをクローンする</h3>
+            <p>
+                ターミナルで下記のコマンドを入力し、クローンを作成してください。(URLは上でコピーしたURLです。)<br>
+                <span class="blackback">
+                    git clone リポジトリのURL
+                </span>
+            </p>
+            <h3>確認</h3>
+            <p>mygitの中にdoyolabというフォルダができて、doyolabフォルダの中にREADME.mdファイルが入っていれば成功です。
+    
+        <h2>■運用</h2>
+            <h3>ファイルを追加、変更したら</h3>
+            <p>
+                htmlファイルを作って、doyolabフォルダに入れ、下記の手順でgithubへアップロードできます。<br>
+                <span class="blackback">
+                    cd mygit/doyolab
+                </span>(doyolabフォルダに移動するだけなので、既に移動済みの場合はいらない)
+                <br>
+                <span class="blackback">
+                    git add .
+                </span>
+                <br>
+                <span class="blackback">
+                    git commit -m"メッセージ"
+                </span>
+                <br>
+                <span class="blackback">
+                    git push
+                </span>
+            </p>
+                
+
+</body>

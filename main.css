@@ -1,0 +1,64 @@
+logo img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* 画像のトリミング */
+}
+logotohome img{
+    display: block;
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* 画像のトリミング */
+}
+
+/* トップページの一覧に関するスタイル----------------------------------------------*/
+figure {
+    display: inline-block;   /* インラインブロック化 */
+    margin: 0px 3px 7px 0px; /* 外側に余白を追加(※右に3px・下に7px) */
+    background-color: #efefef; 
+}
+figure img {
+    display: block;          /* 余計な余白が出ないようにする */
+    margin: 0px 0px 3px 0px; /* 下側にだけ3pxの余白を追加 */
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* 画像のトリミング */
+}
+figcaption {
+    width: 150px;
+    height: 80px;
+    font-size: 0.9em;        /* 文字サイズを90%に */
+    text-align: center;      /* 中身をセンタリング */
+    word-wrap: break-word;
+}
+/* ---------------------------------------------------------------------------*/
+
+
+/* ========== common ========== */
+html, body {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: #393939;
+    margin-left: 15px;
+    margin-bottom: 40px;
+	background: #efefef;
+}
+h1{
+    text-indent: 0em;
+}
+h2{
+    margin-left: 2em;
+    margin-top: 2em;
+}
+h3{
+    margin-left: 3em;
+}
+p,div{
+    margin-left: 5em;
+}
+span.blackback{
+    text-indent: 4em;
+    background: #393939;
+    color: #efefef;
+}
+
