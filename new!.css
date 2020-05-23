@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: Arial;
+}
+
+.dropdown {
+    display: inline-block;
+    margin: 3em;
+}
+
+#tg {
+    display: none;
+}
+
+.menu {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: -10px;
+    list-style: none;
+}
+
+.dropInput:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+}
+
+.dropLabel,
+.item {
+    padding: 1em 1.5em;
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+}
+
+.item:hover {
+    background-color: #3CB371;
+    color: #fff;
+}
+
+.dropLabel:hover,
+.dropInput:checked + label {
+    background: #55eebb;
+    color: #fff;
+}
+
+.animation {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+/*こっから書いてく headerの背景画像にする*/
+body {
+    background-repeat: no-repeat;
+    width: auto;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+
+.header {
+    font-size: 200px;
+    font-family: SquadaOne-Regular;
+    color: snow;
+    padding: 200px 60px 100px 80px;
+
+}
+
+.header span {
+    font-family: SquadaOne-Regular;
+    color: #55eebb;
+
+
+}
+
+.main {
+    display: flex;
+
+
+}
+
+.contents {
+    padding: 20px 80px;
+    margin-top: 30px;
+    color: darkslategrey;
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-title {
+    border-bottom: 2px solid #dee7ec;
+    font-size: 28px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+}
+
+.section-title input[type="checkbox"].on-off,
+.section-title input[type="checkbox"].on-off + div {
+    display: none;
+}
+
+.section-tiyle input[type="checkbox"].on-off:checked + div {
+    display: block;
+}
+
+
+
+.contents-item {
+    float: left;
+
+}
+
+.works-item {
+    margin-right: 40px;
+    float: left;
+    text-align: center;
+    padding: 0 auto;
+
+}
+
+.contents p {
+    font-size: 24px;
+    font-size: 30px;
+    color: darkslategrey;
+    font-weight: bold;
+
+
+
+}
+
+.works-item img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.works-item:hover {
+    opacity: 0.5;
+    cursor: pointer
+}
+
+.works-item p {
+    margin-top: 30px;
+    position: absolute;
+    top: 1150px;
+    width: 19.5%;
+    color: snow;
+
+}
+
+.hidden_box {
+    margin: 2em 0;
+    /*前後の余白*/
+    padding: 0;
+}
+
+.jikosyoukai {
+    display: flex;
+}
+
+.jikosyoukai h2 {
+    font-size: 40px;
+    color: darkslategrey;
+    padding-left: 50px;
+}
+
+.jikosyoukai a {
+    padding-left: 50px;
+    font-size: 30px;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+
+.contact {
+    padding-bottom:80px;
+}
+
+.contact-form {
+    padding-top: 100px;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input,
+textarea {
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 20px;
+    font-size: 18px;
+    border: 1px solid #dee7ec;
+}
+
+/* contact-submitのCSSを指定してください */
+.contact-submit {
+    background-color: #dee7ec;
+    color: #889eab;
+    box-shadow: 0 7px darkslategrey;
+    cursor: pointer;
+}
+
+.contact-submit:active {
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+
+}
+
+.contact p {
+    font-size: 15px;
+}
+
+.hidden_box {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+
+/*ボタン装飾*/
+.hidden_box2 label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box2 label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box2 input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box2 .hidden_show2 {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box2 input:checked ~ .hidden_show2 {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}

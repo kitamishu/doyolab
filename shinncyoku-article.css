@@ -1,0 +1,57 @@
+.header {
+    background-color: dimgrey;
+    height: 90px;
+    font-size: 30px;
+
+}
+
+.backtomain {
+    float: left;
+    font-size: 36px;
+    padding: 20px 40px;
+    color: snow;
+    font-weight: bold;
+
+}
+
+span {
+    color: #5eb
+}
+
+.contents-title {
+    letter-spacing: 5px;
+    border-radius: 20px;
+    background-color: #55eebb;
+    height: 90px;
+    width: 230px;
+    margin: 40px 80px 0;
+    color: snow;
+}
+
+.contents-title h1 {
+    top: 10px;
+}
+
+.contents {
+    padding: 20px 80px;
+    color: darkslategrey;
+
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+}
+.section-title{
+    font-size: 15px;
+}
+
+.title {
+    padding: 20px 40px 0;
+}
+.contents-article{
+    padding-bottom:30px;
+}
+
+.back{
+    font-size: 30px;
+    padding:0 0 50px 80px; 
+}
