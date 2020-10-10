@@ -1,0 +1,341 @@
+@charset "UTF-8";
+a{
+    text-decoration: none;
+    color: black;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_navi {
+	position: fixed;
+	overflow: hidden;
+	width: 360px;
+	height:360px;
+}
+.cp_navi #cp_sidenav a {
+	font-size: 20px;
+	position: absolute;
+	left: -92px;
+	width: 110px;
+	height: 54px;
+	padding: 12px 15px;
+	transition: 0.3s;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 0 5px 5px 0;
+}
+.cp_navi #cp_sidenav a:hover {
+	left: -10px;
+}
+.cp_navi #home {
+	top: 20px;
+	background-color:#2cf0bc ;
+}
+.cp_navi #reseach {
+	top: 80px;
+	background-color: #2cf0bc;
+}
+.cp_navi #works {
+	top: 140px;
+	background-color:#2cf0bc;
+}
+.cp_navi #about  {
+	top: 200px;
+	background-color: #2cf0bc;
+}
+
+.cp_navi #contact {
+	top: 260px;
+	background-color: #2cf0bc;
+}
+/*-----------------------------------------*/
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: ;
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    /*線の上下位置*/
+    display: inline-block;
+    width: 150px;
+    /*線の長さ*/
+    height: 5px;
+    /*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: black;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+}
+
+header figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+header figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/*-----------------こっから---------------------------*/
+.works {
+    display: flow-root;
+    justify-content: center;
+}
+
+.works h3 {
+    color: black;
+
+}
+
+.works-item:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.works-item {
+    margin: 20px 20px 70px 50px;
+}
+
+.works-item img {
+    border-radius: 10px;
+}
+
+
+
+.contents {
+    padding: 20px 80px;
+
+    
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    padding: 20px 40px 0;
+}
+.works h3{
+    font-size: 30px;
+}
+.works-item {
+    float: left;
+    position: relative;
+}
+
+.works-item img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.works-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.works-item .mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.caption {
+    font-size: 130%;
+    text-align: center;
+    padding-top: 90px;
+    color: #fff;
+   
+}
+
+.works-item:hover .mask {
+    opacity: 1;
+     border-radius: 10px;
+    /* マスクを表示する */
+}
+
+
+/*全体*/
+.hidden_box {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box label {
+    padding: 15px;
+    font-weight: bold;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+/*---------------------2020後期---------------------------*/
+/*-----------------こっから---------------------------*/
+.works2 {
+    display: flow-root;
+    justify-content: center;
+}
+
+.works2 h3 {
+    color: black;
+
+}
+
+.works-item2:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.works-item2 {
+    margin: 20px 20px 70px 50px;
+}
+
+.works-item2 img {
+    border-radius: 10px;
+}
+
+
+.title{
+    padding: 20px 40px 0;
+}
+.works2 h3{
+    font-size: 30px;
+}
+.works-item2 {
+    float: left;
+    position: relative;
+}
+
+.works-item2 img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.works-item2:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+.works-item2 .mask2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* 絶対位置指定 */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* マスクを表示しない */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* マスクは半透明 */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.caption2 {
+    font-size: 130%;
+    text-align: center;
+    padding-top: 90px;
+    color: #fff;
+   
+}
+
+.works-item2:hover .mask2 {
+    opacity: 1;
+     border-radius: 10px;
+    /* マスクを表示する */
+}
+
+
+/*全体*/
+.hidden_box2 {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+/*ボタン装飾*/
+.hidden_box2 label {
+    padding: 15px;
+    font-weight: bold;
+    cursor :pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box2 label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box2 input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box2 .hidden_show2 {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box2 input:checked ~ .hidden_show2 {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+/*------------/////////////2020後期//////////////---------------*/

@@ -1,0 +1,242 @@
+@charset "UTF-8";
+a{
+    text-decoration: none;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_navi {
+	position: fixed;
+	overflow: hidden;
+	width: 360px;
+	height:360px;
+}
+.cp_navi #cp_sidenav a {
+	font-size: 20px;
+	position: absolute;
+	left: -92px;
+	width: 110px;
+	height: 54px;
+	padding: 12px 15px;
+	transition: 0.3s;
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 0 5px 5px 0;
+}
+.cp_navi #cp_sidenav a:hover {
+	left: -10px;
+}
+.cp_navi #home {
+	top: 20px;
+	background-color:#2cf0bc ;
+}
+.cp_navi #reseach {
+	top: 80px;
+	background-color: #2cf0bc;
+}
+.cp_navi #works {
+	top: 140px;
+	background-color:#2cf0bc;
+}
+.cp_navi #about  {
+	top: 200px;
+	background-color: #2cf0bc;
+}
+
+.cp_navi #contact {
+	top: 260px;
+	background-color: #2cf0bc;
+}
+/*-----------------------------------------*/
+body {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: ;
+    text-decoration-line: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+h1:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    /*線の上下位置*/
+    display: inline-block;
+    width: 150px;
+    /*線の長さ*/
+    height: 5px;
+    /*線の太さ*/
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    /*位置調整*/
+    background-color: black;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+}
+
+header figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+header figure img {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    margin-top: 0;
+}
+
+article p {
+    line-height: 3;
+}
+
+article h2 {
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.item {
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    color: black;
+}
+
+.item h3 {
+    margin-top: 10px;
+}
+
+.works {
+    display: flex;
+    justify-content: center;
+}
+
+.works h3 {
+    color: black;
+
+}
+
+.works-item:hover {
+    opacity: 0.3;
+    cursor: pointer
+}
+
+.works-item {
+    margin: 0px 20px 70px 50px;
+}
+
+.works-item img {
+    border-radius: 10px;
+}
+
+/*ーーーーーーーーーーーーーーーーーーーー下は70px開けるーーーーーーーーーーーーーーーーーーーー*/
+.about-me {
+    padding-bottom: 70px;
+
+
+}
+
+.about-me1 {
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.name {
+    padding: 20px 0px 0 100px;
+    font-size: 20px;
+}
+
+.explain {
+    padding: 20px 50px 0 200px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+.contact {
+    padding: 0px;
+}
+
+/*ーーお問い合わせーー*/
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+
+.feedback-input {
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 3px solid gray;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #54ecbc;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #2cf0bc;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #54ecec;
+}
+
+
+
+
+
+
