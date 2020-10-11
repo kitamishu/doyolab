@@ -64,7 +64,7 @@ h1 {
     position: relative;
     display: inline-block;
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 h1:before {
@@ -107,6 +107,7 @@ header figure img {
 
 .works h3 {
     color: black;
+    
 
 }
 
