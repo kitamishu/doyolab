@@ -142,6 +142,7 @@ header figure img {
 .works-item {
     float: left;
     position: relative;
+    text-align: center;
 }
 
 .works-item img {

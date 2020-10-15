@@ -1,6 +1,7 @@
 @charset "UTF-8";
 a{
     text-decoration: none;
+    color: black;
 }
 *, *:before, *:after {
 	-webkit-box-sizing: border-box;
@@ -62,8 +63,8 @@ h1 {
     font-weight: bold;
     position: relative;
     display: inline-block;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 h1:before {
@@ -86,15 +87,62 @@ h1:before {
     /*線の丸み*/
 }
 
-img {
-    padding:0 0 60px 0;
+header figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
 }
-div{
-   padding-bottom: 100px;
+
+header figure img {
+    width: 100%;
+    height: 100%;
 }
-h3{
-    color: #fca103;
+
+/*-----------------こっから---------------------------*/
+.works {
+    display:flex;
+    justify-content: center;
+    margin:0 auto;
 }
-main{
-    display: inline-block;
+
+.works h3 {
+    color: black;
+    
+
 }
+
+.works-item:hover {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.works-item {
+    margin: 60px;
+}
+
+.works-item img {
+    border-radius: 10px;
+}
+
+.title{
+    padding: 20px 40px 0;
+}
+
+.works-item {
+    float: left;
+    position: relative;
+    
+
+.works-item img {
+    position: relative;
+    border-radius: 10px;
+}
+
+.works-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+
