@@ -144,5 +144,9 @@ header figure img {
     cursor: pointer;
 
 }
-
+.web{
+        display: inline-block;
+        text-align: left;
+        
+    }
 

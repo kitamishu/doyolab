@@ -98,3 +98,8 @@ h3{
 main{
     display: inline-block;
 }
+.web{
+     display: inline-block;
+    text-align: left;
+   
+}
