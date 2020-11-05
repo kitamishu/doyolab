@@ -87,13 +87,13 @@ h1:before {
 }
 
 img {
-    padding:0 0 60px 0;
+    padding:0 0 20px 0;
 }
 div{
    padding-bottom: 100px;
 }
 h3{
-    color: #fca103;
+    color: #55eebb;
 }
 main{
     display: inline-block;
