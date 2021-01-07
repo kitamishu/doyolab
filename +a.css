@@ -1,0 +1,112 @@
+header #logo img{
+    display: block;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+a{
+    text-decoration: none;
+}
+body{
+    
+}
+#contents {
+    
+}
+#about{
+    padding: 40px 3%;
+    background:#fccc04;
+}
+h2 {
+    text-align: center;
+    color: #2e2823;
+    font-weight:900;
+    font-family: Arial Black;
+}
+h4{
+    text-align: center;
+    color: #2e2823;
+    font-weight:900;
+    font-family: Arial Black;
+}
+#site-explain{
+    text-align: center;
+    background:white;
+    margin:0px 200px 0px 200px; 
+    border-radius: 10px;
+    padding: 50px;
+}
+#site-explain p{
+    font-weight: bold;
+    color: #2e2823;
+}
+#products{
+    padding: 40px 3%;
+}
+#works-list{
+    margin: 0px 200px 0px 200px;
+    padding: 0px 0px 10px 0px;
+    position: relative;
+    width: 910px;
+    
+    
+}
+
+#works-list img{
+    border-radius:10px;
+   
+}
+
+.works-img img:hover{
+   cursor: pointer;
+    opacity: .8;
+   
+}
+
+.works-img{
+	display: flex;
+	flex-wrap:wrap;
+    padding-right: 30px;
+}
+ul{
+    list-style: none;
+}
+.works-img li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.works-img li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+    margin-top: 20px;
+    border: .5px solid black;
+	
+}
+
+
+
+#tag:hover{
+    color: #fccc04;
+    cursor: pointer;
+}
+#tag{
+    color:#2e2823;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    
+}
+#tag a{
+      font-size: small;
+      text-align: center;
+   
+}
+#more:hover{
+    background-color:#fccc04;
+    
+}
+#more h2:hover{
+    color: white;
+
+}
