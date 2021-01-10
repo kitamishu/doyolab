@@ -1,0 +1,272 @@
+header h2{
+   margin-top: 50px;
+    text-align: center;
+    color: #2e2823;
+    font-weight:900;
+    font-family: Arial Black;
+}
+header h4{
+    text-align: center;
+    color: #2e2823;
+    font-weight:900;
+    font-family: Arial Black;
+}
+h1{
+    font-size: 25px;
+    color: #2e2823;
+    font-family: Arial Black;
+}
+#contents{
+    padding: 0px 300px;
+    
+}
+
+.dl img{
+    height: 30px;
+    width: 30px;
+}
+
+.slide {
+ position: relative;
+ width: 70%;
+ height: 400px;
+ overflow: hidden;
+margin: 0 auto;
+}
+.slide img {
+margin-top: 20px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ height: auto;
+ opacity: 0;
+}
+
+@keyframes slideshow1 {
+ 0% {
+  opacity: 0;
+ }
+ 10% {
+  opacity: 1;
+ }
+ 28% {
+  opacity: 1;
+ }
+ 38% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0;
+ }
+}
+ 
+@keyframes slideshow2 {
+ 0% {
+  opacity: 0;
+ }
+ 
+ 10% {
+  opacity: 1;
+ }
+ 28% {
+  opacity: 1;
+ }
+ 38% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0;
+ }
+}
+@keyframes slideshow3 {
+ 0% {
+  opacity: 0;
+ }
+ 
+ 10% {
+  opacity: 1;
+ }
+ 
+ 28% {
+  opacity: 1;
+ }
+ 
+ 38% {
+  opacity: 0;
+ }
+ 
+ 100% {
+  opacity: 0;
+ }
+ 
+}
+.thumbnail {
+ list-style: none;
+ display: flex;
+ padding: 0;
+ margin-top: 30px;
+ justify-content: center;
+}
+input[type="radio"] {
+ display: none;
+}
+.thumbnail img {
+ display: block;
+ width: 163px;
+ height: 100px;
+ object-fit: cover;
+ margin:0 20px 30px 20px;
+ cursor: pointer;
+}
+/*ページを開いたとき＆一つ目のサムネイルをクリックしたとき*/
+#img1:checked ~ .thumbnail label[for="img1"] img {
+ animation: thumb1 24s linear infinite both;
+ animation-delay: 0s;
+ cursor: auto;
+}
+#img1:checked ~ .thumbnail label[for="img2"] img {
+ animation: thumb1 24s linear infinite both;
+ animation-delay: 8s;
+}
+#img1:checked ~ .thumbnail label[for="img3"] img {
+ animation: thumb1 24s linear infinite both;
+ animation-delay: 16s;
+}
+#img1:checked ~ .slide img {
+ animation: slideshow1 24s linear infinite;
+}
+#img1:checked ~ .slide img:nth-child(1) {
+ animation-delay: 0s;
+}
+#img1:checked ~ .slide img:nth-child(2) {
+ animation-delay: 8s;
+}
+#img1:checked ~ .slide img:nth-child(3) {
+ animation-delay: 16s;
+}
+/*二つ目のサムネイルをクリックしたとき*/
+#img2:checked ~ .thumbnail label[for="img1"] img {
+ animation: thumb2 24s linear infinite both;
+ animation-delay: 16s;
+}
+#img2:checked ~ .thumbnail label[for="img2"] img {
+ animation: thumb2 24s linear infinite both;
+ animation-delay: 0s;
+ cursor: auto;
+}
+#img2:checked ~ .thumbnail label[for="img3"] img {
+ animation: thumb2 24s linear infinite both;
+ animation-delay: 8s;
+}
+#img2:checked ~ .slide img {
+ animation: slideshow2 24s linear infinite;
+}
+#img2:checked ~ .slide img:nth-child(1) {
+ animation-delay: 16s;
+}
+#img2:checked ~ .slide img:nth-child(2) {
+ animation-delay: 0s;
+}
+#img2:checked ~ .slide img:nth-child(3) {
+ animation-delay: 8s;
+}
+/*二つ目のサムネイルをクリックしたとき*/
+#img3:checked ~ .thumbnail label[for="img1"] img {
+ animation: thumb3 24s linear infinite both;
+ animation-delay: 8s;
+}
+#img3:checked ~ .thumbnail label[for="img2"] img {
+ animation: thumb3 24s linear infinite both;
+ animation-delay: 16s;
+}
+#img3:checked ~ .thumbnail label[for="img3"] img {
+ animation: thumb3 24s linear infinite both;
+ animation-delay: 0s;
+ cursor: auto;
+}
+#img3:checked ~ .slide img {
+ animation: slideshow3 24s linear infinite;
+ animation-delay: 8s;
+}
+#img3:checked ~ .slide img:nth-child(1) {
+ animation-delay: 8s;
+}
+#img3:checked ~ .slide img:nth-child(2) {
+ animation-delay: 16s;
+}
+#img3:checked ~ .slide img:nth-child(3) {
+ animation-delay: 0s;
+}
+
+#explain{
+    margin: 0px 50px ;
+    padding: 0px 0px 0px 20px;
+
+    border: 2px solid #2e2823;
+    border-radius: 5px;
+    
+}
+#explain h3{
+    font-family: Arial Black;
+    display: inline-block;
+    border-bottom: 5px solid #fccc04;
+}
+#explain p{
+    padding:0px 10px 15px 10px;
+}
+.download{
+    text-align: center;
+    padding-top: 0px;
+}
+.download a{
+    text-decoration: none;
+    
+}
+
+
+.btn,
+a.btn,
+button.btn {
+   
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding:20px 225px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn--yellow {
+  color: #000;
+  background-color: #fccc04;
+  border-bottom: 5px solid #fbbb04;
+}
+
+a.btn--yellow:hover {
+  margin-top: 3px;
+  color: #000;
+  background: #fccc04;
+  border-bottom: 2px solid #ccc100;
+}
+footer{
+
+    padding: 20px 100px;
+}
+a{
+    text-decoration: none;
+}

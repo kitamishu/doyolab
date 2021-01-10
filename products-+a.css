@@ -1,0 +1,78 @@
+h2 {
+    margin-top: 50px;
+    text-align: center;
+    color: #2e2823;
+    font-weight:900;
+    font-family: Arial Black;
+}
+h4{
+    text-align: center;
+    color: #2e2823;
+    font-weight:900;
+    font-family: Arial Black;
+}
+#works-list{
+    padding: 0 300px 100px 260px;
+    
+    position: relative;
+   
+    
+    
+}
+
+#works-list img{
+    border-radius:10px;
+   
+}
+
+.works-img img:hover{
+   cursor: pointer;
+    opacity: .8;
+   
+}
+
+.works-img{
+	display: flex;
+	flex-wrap:wrap;
+    
+}
+ul{
+    list-style: none;
+}
+.works-img li {
+	width: calc(100%/4);/*←画像を横に4つ並べる場合*/
+	padding:0 5px;/*←画像の左右に5pxの余白を入れる場合*/
+	box-sizing:border-box;
+}
+.works-img li img {
+	max-width:100%; /*画像のはみだしを防ぐ*/
+	height: auto; /*画像の縦横比を維持 */
+    margin-top: 20px;
+    border: .5px solid black;
+	
+}
+
+
+
+#tag:hover{
+    color: #fccc04;
+    cursor: pointer;
+}
+#tag{
+    color:#2e2823;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    
+}
+#tag a{
+      font-size: small;
+      text-align: center;
+   
+}
+.header{
+    padding: 0 auto;
+}
+a{
+    text-decoration: none;
+}

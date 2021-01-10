@@ -1,0 +1,230 @@
+.slide {
+ position: relative;
+ width: 100%;
+ height: 500px;
+ overflow: hidden;
+}
+.slide img {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ width: 100%;
+ height: auto;
+ opacity: 0;
+}
+@keyframes thumb1 {
+ 0% {
+  filter: grayscale(0%);
+ }
+ 6% {
+  filter: grayscale(100%);
+ }
+ 10% {
+  filter: grayscale(100%);
+ }
+ 28% {
+  filter: grayscale(100%);
+ }
+ 37% {
+  filter: grayscale(0%);
+ }
+ 100% {
+  filter: grayscale(0%);
+ }
+}
+@keyframes thumb2 {
+ 0% {
+  filter: grayscale(0%);
+ }
+ 6% {
+  filter: grayscale(100%);
+ }
+ 10% {
+  filter: grayscale(100%);
+ }
+ 28% {
+  filter: grayscale(100%);
+ }
+ 37% {
+  filter: grayscale(0%);
+ }
+ 100% {
+  filter: grayscale(0%);
+ }
+}
+@keyframes thumb3 {
+ 0% {
+  filter: grayscale(0%);
+ }
+ 6% {
+  filter: grayscale(100%);
+ }
+ 10% {
+  filter: grayscale(100%);
+ }
+ 28% {
+  filter: grayscale(100%);
+ }
+ 37% {
+  filter: grayscale(0%);
+ }
+ 100% {
+  filter: grayscale(0%);
+ }
+}
+@keyframes slideshow1 {
+ 0% {
+  opacity: 0;
+ }
+ 10% {
+  opacity: 1;
+ }
+ 28% {
+  opacity: 1;
+ }
+ 38% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0;
+ }
+}
+ 
+@keyframes slideshow2 {
+ 0% {
+  opacity: 0;
+ }
+ 
+ 10% {
+  opacity: 1;
+ }
+ 28% {
+  opacity: 1;
+ }
+ 38% {
+  opacity: 0;
+ }
+ 100% {
+  opacity: 0;
+ }
+}
+@keyframes slideshow3 {
+ 0% {
+  opacity: 0;
+ }
+ 
+ 10% {
+  opacity: 1;
+ }
+ 
+ 28% {
+  opacity: 1;
+ }
+ 
+ 38% {
+  opacity: 0;
+ }
+ 
+ 100% {
+  opacity: 0;
+ }
+ 
+}
+.thumbnail {
+ list-style: none;
+ display: flex;
+ padding: 0;
+ margin-top: 30px;
+ justify-content: center;
+}
+input[type="radio"] {
+ display: none;
+}
+.thumbnail img {
+ display: block;
+ width: 200px;
+ height: 100px;
+ object-fit: cover;
+ margin: 10px;
+ cursor: pointer;
+}
+/*ページを開いたとき＆一つ目のサムネイルをクリックしたとき*/
+#img1:checked ~ .thumbnail label[for="img1"] img {
+ animation: thumb1 24s linear infinite both;
+ animation-delay: 0s;
+ cursor: auto;
+}
+#img1:checked ~ .thumbnail label[for="img2"] img {
+ animation: thumb1 24s linear infinite both;
+ animation-delay: 8s;
+}
+#img1:checked ~ .thumbnail label[for="img3"] img {
+ animation: thumb1 24s linear infinite both;
+ animation-delay: 16s;
+}
+#img1:checked ~ .slide img {
+ animation: slideshow1 24s linear infinite;
+}
+#img1:checked ~ .slide img:nth-child(1) {
+ animation-delay: 0s;
+}
+#img1:checked ~ .slide img:nth-child(2) {
+ animation-delay: 8s;
+}
+#img1:checked ~ .slide img:nth-child(3) {
+ animation-delay: 16s;
+}
+/*二つ目のサムネイルをクリックしたとき*/
+#img2:checked ~ .thumbnail label[for="img1"] img {
+ animation: thumb2 24s linear infinite both;
+ animation-delay: 16s;
+}
+#img2:checked ~ .thumbnail label[for="img2"] img {
+ animation: thumb2 24s linear infinite both;
+ animation-delay: 0s;
+ cursor: auto;
+}
+#img2:checked ~ .thumbnail label[for="img3"] img {
+ animation: thumb2 24s linear infinite both;
+ animation-delay: 8s;
+}
+#img2:checked ~ .slide img {
+ animation: slideshow2 24s linear infinite;
+}
+#img2:checked ~ .slide img:nth-child(1) {
+ animation-delay: 16s;
+}
+#img2:checked ~ .slide img:nth-child(2) {
+ animation-delay: 0s;
+}
+#img2:checked ~ .slide img:nth-child(3) {
+ animation-delay: 8s;
+}
+/*二つ目のサムネイルをクリックしたとき*/
+#img3:checked ~ .thumbnail label[for="img1"] img {
+ animation: thumb3 24s linear infinite both;
+ animation-delay: 8s;
+}
+#img3:checked ~ .thumbnail label[for="img2"] img {
+ animation: thumb3 24s linear infinite both;
+ animation-delay: 16s;
+}
+#img3:checked ~ .thumbnail label[for="img3"] img {
+ animation: thumb3 24s linear infinite both;
+ animation-delay: 0s;
+ cursor: auto;
+}
+#img3:checked ~ .slide img {
+ animation: slideshow3 24s linear infinite;
+ animation-delay: 8s;
+}
+#img3:checked ~ .slide img:nth-child(1) {
+ animation-delay: 8s;
+}
+#img3:checked ~ .slide img:nth-child(2) {
+ animation-delay: 16s;
+}
+#img3:checked ~ .slide img:nth-child(3) {
+ animation-delay: 0s;
+}
