@@ -110,3 +110,18 @@ ul{
     color: white;
 
 }
+.nav-fix-pos-pagetop a {
+	display: block;text-decoration: none;text-align: center;position:fixed;opa1;animation-duration: 1s;animation-fill-mode: forwards;
+	width: 60px;		/*ボタンの幅*/
+	line-height: 60px;	/*ボタンの高さ*/
+	bottom: 50px;		/*画面の下からの配置場所指定*/
+	right: 4%;			/*画面の右からの配置場所指定*/
+	background: #555;	/*背景色（古いブラウザ用）*/
+	background: rgba(0,0,0,0.5);	/*背景色。0,0,0は黒の事で、0.5は色が50%出た状態の事。*/
+	color: #fff;		/*文字色*/
+	border-radius: 50%;	/*円形にする指定。この１行を削除すると正方形になります。*/
+}
+
+.nav-fix-pos-pagetop a:hover {
+	background: #999;	/*マウスオン時の背景色*/
+}
