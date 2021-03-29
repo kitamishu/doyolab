@@ -125,3 +125,89 @@ ul{
 .nav-fix-pos-pagetop a:hover {
 	background: #999;	/*マウスオン時の背景色*/
 }
+
+.contact {
+    padding-bottom:80px;
+    background-color: #fccc04;
+    padding-top: 40px;
+}
+
+.contact-form {
+    padding-top: 100px;
+}
+
+/* inputとtextareaのCSSを指定してください */
+input,
+textarea {
+    width: 400px;
+    display:inherit;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #dee7ec;
+}
+
+/* contact-submitのCSSを指定してください */
+.contact-submit {
+    background-color:#fccc06;
+    color: #white;
+    box-shadow: 0 7px darkslategrey;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.contact-submit:active {
+    position: relative;
+    top: 6px;
+    box-shadow: none;
+
+}
+
+.contact p {
+    font-size: 15px;
+}
+
+.hidden_box {
+    margin: 2em 0;/*前後の余白*/
+    padding: 0;
+}
+
+
+/*ボタン装飾*/
+.hidden_box2 label {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*ボタンホバー時*/
+.hidden_box2 label:hover {
+    background: #efefef;
+}
+
+/*チェックは見えなくする*/
+.hidden_box2 input {
+    display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box2 .hidden_show2 {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box2 input:checked ~ .hidden_show2 {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
+.submit{
+    margin-top: 10px;
+    
+    text-align: center;
+}
